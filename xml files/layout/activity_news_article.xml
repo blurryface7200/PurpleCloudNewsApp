@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsArticleActivity">
+
+
+<!--Frame Layout here??-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/newsDetailFullNewsButton">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/newsDetailIV"
+                android:layout_margin="5dp"
+                android:padding="3dp"/>
+
+            <TextView
+                android:id="@+id/newsDetailHeadTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Heading"
+                android:layout_below="@+id/newsDetailIV"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:padding="3dp"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:id="@+id/newsDetailDescTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="description"
+                android:layout_below="@+id/newsDetailHeadTV"
+                android:textSize="20sp"
+                android:padding="3dp"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:id="@+id/newsDetailContentTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Content"
+                android:layout_below="@+id/newsDetailDescTV"
+                android:textSize="16sp"
+                android:padding="3dp"
+                android:layout_margin="3dp" />
+
+            <TextView
+                android:id="@+id/newsDetailAuthorTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Author"
+                android:layout_below="@+id/newsDetailContentTV"
+                android:textSize="12sp"
+                android:textAlignment="textEnd"
+                android:textStyle="italic"
+                android:padding="3dp"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:id="@+id/newsDetailPubDateTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Published Date"
+                android:layout_below="@+id/newsDetailAuthorTV"
+                android:textSize="12sp"
+                android:textAlignment="textEnd"
+                android:padding="3dp"
+                android:layout_margin="3dp"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/newsDetailFullNewsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read Full News"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

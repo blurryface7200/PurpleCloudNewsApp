@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search_section_icon"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Search"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/curated_news_icon"
+        android:icon="@drawable/ic_baseline_filter_list_24"
+        android:title="Curated News"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/top_headlines_icon"
+        android:icon="@drawable/ic_baseline_whatshot_24"
+        android:title="Top Headlines"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/categories_section_icon"
+        android:icon="@drawable/ic_baseline_grid_view_24"
+        android:title="Categories"
+        app:showAsAction="always"/>
+</menu>
